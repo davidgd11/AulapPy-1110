@@ -175,6 +175,11 @@ def conta_arestasOLD(arestas):
 
 def conta_arestas(arestas):
     nro_vertices = len(arestas) #len(arestas[0])
+    soma = 0
+    for i in range(0, nro_vertices):
+        for j in range(0, nro_vertices):
+            soma += arestas[1][j]
+    return soma
 
 
 # direi que um grafo eh uma "estrela", ou ainda um "asterisco"
